@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Become a Donor | BloodConnect</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation (Same as before) -->
+  
+  <main class="container">
+    <section class="donor-form">
+      <h1>Join Our Lifesaving Network</h1>
+      <form id="registrationForm">
+        <!-- Name -->
+        <div class="form-group">
+          <label for="name">Full Name*</label>
+          <input type="text" id="name" required>
+          <i class="fas fa-check-circle valid-icon"></i>
+          <i class="fas fa-exclamation-circle invalid-icon"></i>
+          <small>Error message</small>
+        </div>
+
+        <!-- Blood Type -->
+        <div class="form-group">
+          <label for="blood-type">Blood Type*</label>
+          <select id="blood-type" required>
+            <option value="">Select</option>
+            <option value="A+">A+ (Most common in India)</option>
+            <option value="A-">A- (Universal platelet donor)</option>
+            <option value="B+">B+</option>
+            <option value="B-">B- (Rare)</option>
+            <option value="O+">O+ (Universal RBC donor)</option>
+            <option value="O-">O- (Universal donor)</option>
+            <option value="AB+">AB+ (Universal plasma recipient)</option>
+            <option value="AB-">AB- (Rarest)</option>
+          </select>
+        </div>
+
+        <!-- Location -->
+        <div class="form-group">
+          <label for="location">City*</label>
+          <input type="text" id="location" required>
+          <i class="fas fa-check-circle valid-icon"></i>
+          <i class="fas fa-exclamation-circle invalid-icon"></i>
+        </div>
+
+        <!-- Contact -->
+        <div class="form-group">
+          <label for="contact">Mobile Number*</label>
+          <input type="tel" id="contact" pattern="[0-9]{10}" required>
+          <small>10-digit number only</small>
+        </div>
+
+        <!-- Privacy Toggle -->
+        <div class="toggle-group">
+          <label>
+            <input type="checkbox" id="privacyToggle">
+            <span class="toggle-slider"></span>
+            <span>Hide my contact from public searches</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Register as Donor</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="donar.js"></script>
+</body>
+</html>
