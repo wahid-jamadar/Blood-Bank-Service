@@ -24,7 +24,7 @@ A responsive and user-friendly Blood Bank Service website designed to connect bl
 | HTML5        | Structure of the webpages          |
 | CSS3         | Styling with light red and white themes |
 | JavaScript   | Frontend logic & interactivity     |
-| Firebase / JSON / PHP (Optional) | For database connectivity (extendable) |
+| Firebase / JSON | For database connectivity (extendable) |
 
 ---
 
@@ -39,5 +39,5 @@ A responsive and user-friendly Blood Bank Service website designed to connect bl
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/blood-bank-website.git
+git clone https://github.com/wahid-jamadar/blood-bank-website.git
 cd blood-bank-website
